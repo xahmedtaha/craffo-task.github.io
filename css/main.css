@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Zurich;
+        src: url(../fonts/ZurichRegular.otf) format("otf");
+    }
+}
+
+.hover-underline{
+    @apply relative after:block after:content-[''] after:absolute after:h-[1px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left;
+}
+.swiper-pagination-bullet {
+    width: 48px !important;
+    height: 2px !important;
+    @apply !bg-white !opacity-25;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply !bg-white !opacity-100;
+  }

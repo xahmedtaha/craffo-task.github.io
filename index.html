@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craffo Application Task</title>
+    <link href="./css/output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body class="min-h-screen font-sans">
+  <main class="h-screen flex flex-col">
+    <!-- BANNER START -->
+    <div class="relative isolate overflow-hidden bg-accent px-6 py-4 sm:px-3.5 sm:before:flex-1">
+      <div class="max-w-2xl mx-auto flex items-center gap-x-6 h-full">
+        <div class="flex flex-1">
+          <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+            <svg fill="none" focusable="false" width="12" height="10" class="icon icon--nav-arrow-left-small  icon--direction-aware " viewBox="0 0 12 10">
+              <path d="M12 5L2.25 5M2.25 5L6.15 9.16M2.25 5L6.15 0.840001" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p class="text-sm leading-6 text-gray-900">
+            Discover : The Heritage Collection.
+            <a href="#" class="underline ml-3">Learn More</a>
+          </p>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+            <svg fill="none" focusable="false" width="12" height="10" class="icon icon--nav-arrow-right-small  icon--direction-aware " viewBox="0 0 12 10">
+              <path d="M-3.63679e-07 5L9.75 5M9.75 5L5.85 9.16M9.75 5L5.85 0.840001" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER END -->
+
+    <!-- NAVIGATION START -->
+    <nav class="bg-background">
+      <div class="mx-auto max-w-[1600px] px-[40px]">
+        <div class="relative h-[60px] md:h-[80px] sm:h-[73px] flex items-center">
+          <div class="flex items-center space-x-1 lg:hidden flex-1">
+            <!-- Mobile menu button -->
+            <a href="#" class="px-3 py-2 text-sm font-medium text-white" aria-controls="mobile-menu" aria-expanded="false">
+              <svg focusable="false" width="18" height="14" class="icon icon--header-hamburger   " viewBox="0 0 18 14">
+                <path d="M0 1h18M0 13h18H0zm0-6h18H0z" fill="none" stroke="currentColor" stroke-width="2"></path>
+              </svg>
+            </a>
+            <a href="#" class="px-3 py-2 text-sm font-medium text-white">
+              <svg focusable="false" width="18" height="18" viewBox="0 0 18 18">
+                <path d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17" fill="none" stroke="currentColor" stroke-width="2"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="flex items-center justify-start px-2 lg:px-0 lg:flex-1">
+            <img class="w-full max-w-[100px] md:max-w-[95px]" src="./img/logo-focal.png" alt="FOCAL">
+          </div>
+          <div class="hidden lg:flex flex-1 lg:basis-auto justify-center">
+            <div class="flex space-x-10">
+              <a href="#" class="rounded-md text-[15px] text-white hover-underline">Shop By Category</a>
+              <a href="#" class="rounded-md text-[15px] text-white hover-underline">Shop By Device</a>
+              <a href="#" class="rounded-md text-[15px] text-white hover-underline">Collections</a>
+              <a href="#" class="rounded-md text-[15px] text-white hover-underline">Blog</a>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center justify-end space-x-1">
+              <a href="#" class="px-3 py-2 text-sm font-medium text-white">
+                <svg focusable="false" width="20" height="16" class="icon icon--header-email" viewBox="0 0 20 16">
+                  <path d="M19 4l-9 5-9-5" fill="none" stroke="currentColor" stroke-width="2"></path>
+                  <path stroke="currentColor" fill="none" stroke-width="2" d="M1 1h18v14H1z"></path>
+                </svg>
+              </a>
+              <a href="#" class="px-3 py-2 text-sm font-medium text-white hidden sm:block">
+                <svg focusable="false" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17" fill="none" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+              </a>
+              <a href="#" class="px-3 py-2 text-sm font-medium text-white hidden sm:block">
+                <svg focusable="false" width="18" height="17" viewBox="0 0 18 17">
+                  <circle cx="9" cy="5" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></circle>
+                  <path d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0" fill="none" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+              </a>
+              <a href="#" class="px-3 py-2 text-sm font-medium text-white relative hidden sm:block">
+                <svg focusable="false" width="20" height="18" viewBox="0 0 20 18">
+                  <path d="M3 1h14l1 16H2L3 1z" fill="none" stroke="currentColor" stroke-width="2"></path>
+                  <path d="M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0" fill="none" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+                <span class="absolute right-0 top-0 inline-flex items-start justify-center h-[21px] w-[21px] text-[9px] rounded-full bg-white text-black text-center">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVIGATION END -->
+
+    <!-- SLIDER START -->
+    <div class="swiper w-full min-h-[600px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative">
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black"></div>
+          <div class="absolute inset-0 flex items-center px-12 max-w-7xl mx-auto">
+            <div class="text-white">
+              <p class="text-md md:text-lg font-medium mb-6 uppercase">PREMIUM COLLECTION</p>
+              <h1 class="text-4xl md:text-7xl font-black uppercase mb-12 max-w-3xl">The Heritage Collection</h1>
+              <div class="flex flex-wrap space-x-4">
+                <button class="px-4 py-4 md:py-6 md:min-w-[175px] text-center text-sm md:text-md bg-primary text-black font-medium uppercase">Learn More</button>
+                <button class="px-4 py-4 md:py-6 md:min-w-[175px] text-center text-sm md:text-md bg-primary text-black font-medium uppercase">Shop</button>
+              </div>
+            </div>
+          </div>
+          <img src="./img/slider-1.jpg" class="bg-cover object-cover w-full h-full">
+        </div>
+        <div class="swiper-slide">
+          <div class="absolute inset-0 flex items-center px-12 max-w-7xl mx-auto">
+            <div class="text-white">
+              <p class="text-md md:text-lg font-medium mb-6 uppercase">COLLABRATION</p>
+              <h1 class="text-4xl md:text-7xl font-black uppercase mb-12 max-w-3xl">NATIVE UNION X TOM DIXON</h1>
+              <div class="flex flex-wrap space-x-4">
+                <button class="px-4 py-4 md:py-6 md:min-w-[175px] text-center text-sm md:text-md bg-primary text-black font-medium uppercase">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <img src="./img/slider-4.jpg" class="bg-cover object-cover w-full h-full">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- SLIDER END -->
+  </main>
+
+  <!-- SCRIPTS START -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+  <!-- SCRIPTS END -->
+</body>
+</html>
